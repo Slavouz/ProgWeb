@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penjumlahan Bilangan</title>
-</head>
-<body>
+    <style>
+      button,
+      input[type="button"] {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
     <h1>PENJUMLAHAN BILANGAN</h1>
     <label for="fnum">Bilangan Pertama</label>
-    <input type="number" name="fnum" id="fnum">
+    <input type="number" name="fnum" id="fnum" />
     <label for="snum">Bilangan Kedua</label>
-    <input type="number" name="snum" id="snum"><br/><br/>
-    <input type="button" value="Jumlahkan" onclick="sum()">
+    <input type="number" name="snum" id="snum" /><br /><br />
+    <input type="button" value="Jumlahkan" onclick="sum()" />
     <button type="button" onclick="wipeOut()">Ulang</button>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,37 +1,40 @@
 body {
-    background-color: rgb(84, 152, 255);
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(84, 152, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
-    margin-top: 32px;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    background-color: whitesmoke;
+  margin-top: 32px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  background-color: whitesmoke;
 }
 
-input, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: rgb(231, 231, 231);
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(231, 231, 231);
 }
 
 td {
-    color: rgb(58, 58, 58);
+  color: rgb(58, 58, 58);
 }
 
-input[type=button] {
-    width: auto;
-    background-color: rgb(0, 152, 212);
-    color: white;
-    padding: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+input[type="button"] {
+  width: auto;
+  background-color: rgb(0, 152, 212);
+  color: white;
+  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
 }
 
-input[type=text], input[type=email] {
-    height: 30px;
+input[type="text"],
+input[type="email"] {
+  height: 30px;
 }
