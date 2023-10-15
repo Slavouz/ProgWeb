@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <p id="num"></p>
+    <table>
+      <tr>
+        <td>
+          <input type="button" value="AC" onclick="allClear()" />
+        </td>
+        <td>
+          <input type="button" value="DE" onclick="deleteEntry()" />
+        </td>
+        <td><input type="button" value="." onclick="mod()" /></td>
+        <td>
+          <input type="button" value="/" onclick="divide()" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="7" onclick="btnNumber(7)" />
+        </td>
+        <td>
+          <input type="button" value="8" onclick="btnNumber(8)" />
+        </td>
+        <td>
+          <input type="button" value="9" onclick="btnNumber(9)" />
+        </td>
+        <td>
+          <input type="button" value="x" onclick="mult()" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="btnNumber(4)" />
+        </td>
+        <td>
+          <input type="button" value="5" onclick="btnNumber(5)" />
+        </td>
+        <td>
+          <input type="button" value="6" onclick="btnNumber(6)" />
+        </td>
+        <td>
+          <input type="button" value="-" onclick="minus()" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="btnNumber(1)" />
+        </td>
+        <td>
+          <input type="button" value="2" onclick="btnNumber(2)" />
+        </td>
+        <td>
+          <input type="button" value="3" onclick="btnNumber(3)" />
+        </td>
+        <td>
+          <input type="button" value="+" onclick="plus()" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="00" onclick="btnNumber('00')" />
+        </td>
+        <td>
+          <input type="button" value="0" onclick="btnNumber(0)" />
+        </td>
+        <td colspan="2">
+          <input type="button" value="=" onclick="result()" />
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
