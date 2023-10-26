@@ -1,0 +1,28 @@
+#num {
+  text-align: end;
+  margin-right: 8px;
+  font-size: 28px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="button"] {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+table {
+  margin: 0 auto;
+  background-color: rgb(31, 31, 31);
+  border-radius: 5px;
+  color: white;
+}
+
+input[type="button"].nonNum {
+  color: rgb(0, 255, 208);
+}

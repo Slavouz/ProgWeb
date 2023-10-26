@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      .table td.fit,
-      .table th.fit {
-        white-space: nowrap;
-        width: 1%;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List App</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <div
-      class="position-absolute top-50 start-50 translate-middle"
-      style="width: 50rem"
-    >
+    <div class="container mt-5">
       <div class="card text-bg-primary border-0 mb-3">
         <div class="card-header">Add Activity</div>
         <div class="card-body text-bg-light">
-          <table>
+          <table style="width: 100%">
             <tr>
               <td>
                 <p class="card-text">Activity</p>
               </td>
             </tr>
             <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
               <td>
-                <div class="input-group">
-                  <input type="text" class="form-control" name="act" id="act" />
-                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="noteName"
+                  id="noteName"
+                />
               </td>
+              <td></td>
+              <td></td>
               <td>
-                <button type="button" class="btn btn-success">Add</button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  onclick="addNotes()"
+                >
+                  Add
+                </button>
               </td>
             </tr>
           </table>
         </div>
       </div>
+
+      <div class="card text-bg-info border-0 mb-3">
+        <div class="card-header text-white">List Activities</div>
+        <div
+          class="card-body text-bg-light"
+          id="noteBody"
+          name="noteBody"
+          style="max-height: 50vh; overflow-y: auto"
+        ></div>
+      </div>
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

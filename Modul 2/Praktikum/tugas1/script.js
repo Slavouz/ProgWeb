@@ -81,6 +81,22 @@ function mod() {
   }
 }
 
+function pow() {
+  if(lastOperator == "" || lastOperator != "^") {
+    if(lastOperator != "^" && lastOperator != "") {
+      operation = operation.slice(0, operation.length - 3);
+      operation = operation.concat(` ** `);
+      console.log(`Operation: ${operation}`);
+    } else {
+      operation = operation.concat(` ** `);
+      console.log(`Operation: ${operation}`);
+    }
+    numA = 0;
+    lastOperator = "^";
+    document.getElementById("num").innerHTML = operation;
+  }
+}
+
 function result() {
   let res = eval(operation);
   document.getElementById("num").innerHTML = res;
@@ -95,7 +111,7 @@ function allClear() {
   operation = "";
   lastOperator = "";
   console.log(`Operation: ${operation}`);
-  document.getElementById("num").innerHTML = operation;
+  document.getElementById("num").innerHTML = numA;
 }
 
 function deleteEntry() {
