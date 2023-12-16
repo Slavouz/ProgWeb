@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreProductCategoryRequest;
+use App\Http\Requests\UpdateProductCategoryRequest;
 use App\Http\Resources\ProductCategoryCollection;
 use App\Http\Resources\ProductCategoryResource;
 use App\Models\ProductCategory;
 use Exception;
-use Illuminate\Http\Request;
 
 class ProductCategoryController extends Controller
 {
@@ -30,11 +31,12 @@ class ProductCategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreProductCategoryRequest $request)
     {
         $validatedRequest = $request->validated();
         try {
-            $queryData = ProductCategory::create($validatedRequest);
+            $queryData = ProductCategory::create($validatedRequest);           
+            $queryData->save();
             $formattedDatas = new ProductCategoryResource($queryData);
             return response()->json([
                 "message" => "success",
@@ -65,7 +67,7 @@ class ProductCategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateProductCategoryRequest $request, string $id)
     {
         $validatedRequest = $request->validated();
         try {
